@@ -1,0 +1,464 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include general;
+}
+
+//Navigation
+
+.navbar {
+    line-height: 150px;
+}
+
+nav ul {
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    font-family: $general-text;
+    list-style: none;
+    text-decoration: none;
+    font-size: $navbar-text-size;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: $dark-text;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 23px;
+}
+
+nav ul li a:hover {
+    color: $navbar !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.underline-animation::after {
+    @include underline-animation-after;
+}
+
+.underline-animation:hover::after {
+    @include underline-animation-hover;
+}
+
+.logo {
+    font-size: $song-noter-logo-size;
+    font-family: $bold-font;
+    padding: 0 50px;
+}
+
+.logo-first-part {
+    color: $light-text;
+    background-color: $logo-background;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+.sign-up {
+    @include button;
+}
+
+.sign-up:hover {
+    @include button-hover;
+}
+
+#icon {
+    @include hamburger-icon;
+}
+
+@media (max-width: 1048px) {
+    .logo {
+        padding: 0 20px;
+    }
+
+    nav ul li a {
+        padding: 2px 5px;
+    }
+}
+
+//Header
+
+.header-part {
+    margin-top: 100px;
+    height: 1000px;
+}
+
+.musical-notes h1 {
+    @include musical-notes-heading;
+}
+
+.musical-notes-text {
+    @include musical-notes-text;
+}
+
+.musical-notes {
+    position: relative;
+}
+
+.mobile-picture-part {
+    position: relative;
+    height: 800px;
+}
+
+#mobile-picture {
+    @include mobile-phone;
+}
+
+// Circles Header Part
+
+.circle {
+    @include circle;
+}
+
+.yellow-circle-lg {
+    @include yellow-circle-lg;
+}
+
+.purple-figure {
+    @include purple-figure;
+}
+
+.mobile-picture-part .yellow-circle-sm {
+    @include yellow-circle-small;
+    right: 130px;
+    top: 90px;
+}
+
+.mobile-picture-part .purple-circle {
+    @include purple-circle;
+    right: 45px;
+    bottom: 200px;
+}
+
+.yellow-circle {
+    @include yellow-circle;
+}
+
+.musical-notes .purple-circle {
+    @include purple-circle;
+    bottom: 100px;
+    left: 50px;
+}
+
+.musical-notes .yellow-circle-sm {
+    @include yellow-circle-small;
+    bottom: 160px;
+    right: 50px;
+}
+
+.yellow-circle-light {
+    @include yellow-circle-light;
+}
+
+.purple-circle-sm {
+    @include purple-circle-small;
+}
+
+//Features
+
+#features {
+    @include features;
+}
+
+#features h2 {
+    @include section-heading;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#features i {
+    @include icons;
+}
+
+#features h3 {
+    @include icon-heading;
+}
+
+.text-center {
+    @include text-center-icons;
+}
+
+.icon-text {
+    @include icon-text;
+}
+
+.lower-icons {
+    margin-top: 50px;
+}
+
+.check-icon {
+    position: relative;
+}
+.dark-yellow-circle-features {
+    @include dark-yellow-circle-features;
+}
+
+.purple-circle-sm-features {
+    @include purple-circle-sm-features;
+}
+
+.light-yellow-circle-features {
+    @include light-yellow-circle-features;
+}
+
+// Add Friends
+
+.add-friends {
+    @include add-friends;
+}
+
+.mobile-phone-add-friends {
+    position: relative;
+
+    img {
+        margin-left: 40px;
+    }
+}
+
+.rectangle-add-friends {
+    @include rectangle-add-friends;
+}
+
+.semi-circle-add-friends {
+    @include semi-circle-add-friends;
+}
+
+.add-friends-text {
+    position: relative;
+    h2 {
+        @include section-heading;
+        margin-top: 150px;
+    }
+
+    p {
+        line-height: 42px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-right: 190px;
+    }
+
+    img {
+        height: 430px;
+        width: 430px;
+        position: absolute;
+        bottom: -540px;
+        right: 30px;
+    }
+}
+
+.learn-more {
+    @include button;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.learn-more:hover {
+    @include button-hover;
+}
+
+.yellow-circle-add-friends {
+    @include yellow-circle-add-friends;
+}
+
+.purple-circle-add-friends {
+    @include purple-circle-add-friends;
+}
+
+//App Badge
+
+.app-badge {
+    @include app-badge;
+
+    h2 {
+        @include section-heading;
+        margin: 180px 0 20px 300px;
+    }
+
+    a {
+        margin-top: 60px;
+        margin-left: 300px;
+    }
+}
+
+.get-app {
+    position: relative;
+}
+
+.pink-circle-app-badge {
+    @include pink-circle-app-badge;
+}
+
+.purple-circle-app-badge {
+    @include purple-circle-app-badge;
+}
+
+.yellow-circle-app-badge {
+    @include yellow-circle-app-badge;
+}
+
+.app-badge-phone {
+    position: relative;
+}
+
+.app-badge-phone img {
+    margin-left: 100px;
+}
+
+.yellow-circle-app-badge-phone {
+    @include yellow-circle-app-badge-phone;
+}
+
+.white-circle-app-badge-phone {
+    @include white-circle-app-badge-phone;
+}
+
+.purple-triangle-app-badge {
+    @include purple-triangle-app-badge;
+}
+
+.purple-triangle-app-badge::before,
+.purple-triangle-app-badge::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-top-right-radius: inherit;
+}
+
+.purple-triangle-app-badge::before {
+    @include purple-triangle-app-badge-before;
+}
+
+.purple-triangle-app-badge::after {
+    @include purple-triangle-app-badge-after;
+}
+
+//Subscribe to Newsletter
+
+.subscribe-to-newsletter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: $subscribe-section;
+    height: 450px;
+    margin-top: 600px;
+    margin-bottom: 200px;
+
+    img {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        bottom: -170px;
+        left: 40px;
+    }
+
+    h2 {
+        @include section-heading;
+        color: $light-text;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .email {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 500px;
+    }
+}
+
+.email input {
+    @include email-input;
+}
+
+.email input::placeholder {
+    font-size: $email-placeholder-size;
+}
+
+.email button {
+    @include subscribe-button;
+}
+
+.purple-circle-subscribe-to-newsletter {
+    @include purple-circle-subscribe-to-newsletter;
+}
+
+.yellow-circle-subscribe-to-newsletter {
+    @include yellow-circle-subscribe-to-newsletter;
+}
+
+.pink-circle-subscribe-to-newsletter {
+    @include pink-circle-subscribe-to-newsletter;
+}
+
+.white-circle-subscribe-to-newsletter {
+    @include white-circle-subscribe-to-newsletter;
+}
+
+//Footer
+
+footer {
+    margin-top: 100px;
+}
+
+//Mobile Design
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: $white-background;
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        font-size: 22px;
+        font-family: $bold-font;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .fa-xmark {
+        font-size: 25px;
+    }
+
+    .underline-animation:hover::after {
+        visibility: hidden;
+    }
+
+    .sign-up:hover {
+        font-family: $bold-font;
+    }
+}

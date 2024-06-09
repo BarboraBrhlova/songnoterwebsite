@@ -1,0 +1,386 @@
+@mixin general {
+    font-family: "Palanquin";
+    color: $dark-text;
+    font-size: $general-text-size;
+    letter-spacing: 0.5px;
+}
+
+@mixin section-heading {
+    font-size: $section-heading-size;
+    font-family: $bold-font;
+}
+
+@mixin button {
+    font-size: $button-text-size;
+    color: $light-text;
+    background-color: $button;
+    padding: 0 27px;
+    border-radius: 7px;
+    border: none;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin button-hover {
+    background-color: $button-hover;
+}
+
+@mixin underline-animation-after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $navbar;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin underline-animation-hover {
+    width: 100%;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+@mixin hamburger-icon {
+    line-height: 150px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@mixin mobile-phone {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    left: 140px;
+}
+
+@mixin musical-notes-heading {
+    font-family: $bold-font;
+    font-size: $main-heading-size;
+    line-height: 1.5;
+}
+
+@mixin musical-notes-text {
+    font-size: $section-heading-size;
+    font-weight: 200;
+    line-height: 2.2;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+@mixin circle {
+    border-radius: 50%;
+}
+
+@mixin yellow-circle-lg {
+    background-color: $yellow-circle-dark;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -90px;
+    left: 30px;
+}
+
+@mixin purple-figure {
+    background-color: $purple-figure;
+    width: 440px;
+    height: 360px;
+    position: absolute;
+    bottom: 150px;
+    left: 120px;
+    border-radius: 85% 15% 36% 64% / 42% 56% 44% 58%;
+    rotate: -10deg;
+}
+
+@mixin yellow-circle-small {
+    background-color: $yellow-circle-sm;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+
+@mixin purple-circle {
+    background-color: $purple-circle;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+@mixin yellow-circle {
+    background-color: $yellow-circle;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -10px;
+    left: 60px;
+}
+
+@mixin yellow-circle-light {
+    background-color: $yellow-circle;
+    opacity: 0.3;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 220px;
+    left: 180px;
+}
+
+@mixin purple-circle-small {
+    background-color: $purple-circle;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 430px;
+    right: 75px;
+}
+
+//Features
+@mixin features {
+    padding: 50px 300px;
+    margin-bottom: 300px;
+}
+
+@mixin text-center-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin icon-text {
+    padding: 0 100px;
+    font-size: $icon-text;
+    line-height: 35px;
+}
+
+@mixin icon-heading {
+    font-size: $icon-heading;
+    margin-bottom: 20px;
+}
+
+@mixin icons {
+    font-size: 40px;
+    color: $icons;
+    background-color: $icons-background;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+@mixin dark-yellow-circle-features {
+    background-color: $yellow-circle-dark;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+
+@mixin purple-circle-sm-features {
+    background-color: $purple-circle;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -40px;
+    bottom: -10px;
+}
+
+@mixin light-yellow-circle-features {
+    background-color: $yellow-circle;
+    opacity: 0.3;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 75px;
+    bottom: -150px;
+}
+
+//Add Friends
+
+@mixin add-friends {
+    background: $add-friend-section;
+    padding-top: 40px;
+    padding-bottom: 290px;
+}
+
+@mixin rectangle-add-friends {
+    background-color: $purple-rectangle;
+    width: 325px;
+    height: 310px;
+    border-radius: 45px;
+    rotate: (12deg);
+    position: absolute;
+    top: -70px;
+    left: 140px;
+}
+
+@mixin semi-circle-add-friends {
+    background-color: $semi-circle-add-friends;
+    width: 250px;
+    height: 210px;
+    rotate: (-23deg);
+    position: absolute;
+    left: 330px;
+    bottom: -235px;
+    border-radius: 86% 12% 50% 50% / 59% 44% 56% 41%;
+}
+
+@mixin add-friends-text {
+    padding-top: 170px;
+}
+
+@mixin yellow-circle-add-friends {
+    position: absolute;
+    left: -40px;
+    bottom: -70px;
+    width: 22px;
+    height: 22px;
+    background-color: $yellow-circle-dark;
+}
+
+@mixin purple-circle-add-friends {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: $purple-circle;
+    opacity: 0.3;
+    bottom: -170px;
+    left: 50px;
+}
+
+//App Badge
+
+@mixin app-badge {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+
+@mixin pink-circle-app-badge {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 60px;
+    bottom: -70px;
+    background-color: $pink-circle;
+}
+
+@mixin purple-circle-app-badge {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 150px;
+    bottom: -280px;
+    background-color: $purple-circle;
+    opacity: 0.5;
+}
+
+@mixin yellow-circle-app-badge {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    right: 10px;
+    bottom: -370px;
+    background-color: $yellow-circle-dark;
+    opacity: 0.5;
+}
+
+@mixin yellow-circle-app-badge-phone {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    right: 45px;
+    top: -70px;
+    z-index: -1;
+    background-color: $yellow-circle-dark;
+    display: flex;
+}
+
+@mixin white-circle-app-badge-phone {
+    height: 60px;
+    width: 60px;
+    background-color: $white-background;
+    margin: auto;
+    justify-content: center;
+}
+
+@mixin purple-triangle-app-badge {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: $purple-triangle;
+    border-top-right-radius: 30%;
+    transform: rotate(-105deg) skew(-30deg) scale(1, 0.866);
+    bottom: -390px;
+    right: -170px;
+    z-index: -1;
+}
+
+@mixin purple-triangle-app-badge-before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+        translateY(-50%);
+}
+
+@mixin purple-triangle-app-badge-after {
+    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translateX(50%);
+}
+
+//Subscribe to Our Newsletter
+
+@mixin email-input {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 35px;
+    width: 500px;
+}
+
+@mixin subscribe-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 15px;
+    border-radius: 35px;
+    border: none;
+    right: -70px;
+    font-size: $button-text-size;
+    cursor: pointer;
+    background-color: $subscribe-button;
+    color: $light-text;
+}
+
+@mixin purple-circle-subscribe-to-newsletter {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+    background-color: $purple-circle-light;
+}
+
+@mixin yellow-circle-subscribe-to-newsletter {
+    position: absolute;
+    left: 140px;
+    top: 110px;
+    width: 65px;
+    height: 65px;
+    background-color: $yellow-circle-light;
+}
+
+@mixin pink-circle-subscribe-to-newsletter {
+    position: absolute;
+    left: 30px;
+    bottom: 160px;
+    width: 20px;
+    height: 20px;
+    background-color: $pink-circle;
+}
+
+@mixin white-circle-subscribe-to-newsletter {
+}

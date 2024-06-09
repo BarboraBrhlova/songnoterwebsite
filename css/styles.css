@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Palanquin";
+    color: #212121;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    line-height: 150px;
+}
+
+nav ul {
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    font-family: "Palanquin";
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: #212121;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 23px;
+}
+
+nav ul li a:hover {
+    color: #9630db !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #9630db;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 18px;
+    font-family: "Palanquin Dark";
+    padding: 0 50px;
+}
+
+.logo-first-part {
+    color: #ffffff;
+    background-color: #9630db;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+.sign-up {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #9630db;
+    padding: 0 27px;
+    border-radius: 7px;
+    border: none;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-up:hover {
+    background-color: #5c0a96;
+}
+
+#icon {
+    line-height: 150px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    .logo {
+        padding: 0 20px;
+    }
+    nav ul li a {
+        padding: 2px 5px;
+    }
+}
+.header-part {
+    margin-top: 100px;
+    height: 1000px;
+}
+
+.musical-notes h1 {
+    font-family: "Palanquin Dark";
+    font-size: 68px;
+    line-height: 1.5;
+}
+
+.musical-notes-text {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 2.2;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.musical-notes {
+    position: relative;
+}
+
+.mobile-picture-part {
+    position: relative;
+    height: 800px;
+}
+
+#mobile-picture {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    left: 140px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.yellow-circle-lg {
+    background-color: #f5ac15;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -90px;
+    left: 30px;
+}
+
+.purple-figure {
+    background-color: #8a34c3;
+    width: 440px;
+    height: 360px;
+    position: absolute;
+    bottom: 150px;
+    left: 120px;
+    border-radius: 85% 15% 36% 64%/42% 56% 44% 58%;
+    rotate: -10deg;
+}
+
+.mobile-picture-part .yellow-circle-sm {
+    background-color: #ffbe3a;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 130px;
+    top: 90px;
+}
+
+.mobile-picture-part .purple-circle {
+    background-color: #8a34c3;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 45px;
+    bottom: 200px;
+}
+
+.yellow-circle {
+    background-color: #feb010;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -10px;
+    left: 60px;
+}
+
+.musical-notes .purple-circle {
+    background-color: #8a34c3;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+
+.musical-notes .yellow-circle-sm {
+    background-color: #ffbe3a;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 160px;
+    right: 50px;
+}
+
+.yellow-circle-light {
+    background-color: #feb010;
+    opacity: 0.3;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 220px;
+    left: 180px;
+}
+
+.purple-circle-sm {
+    background-color: #8a34c3;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 430px;
+    right: 75px;
+}
+
+#features {
+    padding: 50px 300px;
+    margin-bottom: 300px;
+}
+
+#features h2 {
+    font-size: 28px;
+    font-family: "Palanquin Dark";
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#features i {
+    font-size: 40px;
+    color: #8a34c3;
+    background-color: #ede0f6;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#features h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-text {
+    padding: 0 100px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.lower-icons {
+    margin-top: 50px;
+}
+
+.check-icon {
+    position: relative;
+}
+
+.dark-yellow-circle-features {
+    background-color: #f5ac15;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+
+.purple-circle-sm-features {
+    background-color: #8a34c3;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -40px;
+    bottom: -10px;
+}
+
+.light-yellow-circle-features {
+    background-color: #feb010;
+    opacity: 0.3;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 75px;
+    bottom: -150px;
+}
+
+.add-friends {
+    background: linear-gradient(
+        rgba(138, 52, 195, 0.15),
+        rgba(152, 173, 248, 0.1)
+    );
+    padding-top: 40px;
+    padding-bottom: 290px;
+}
+
+.mobile-phone-add-friends {
+    position: relative;
+}
+.mobile-phone-add-friends img {
+    margin-left: 40px;
+}
+
+.rectangle-add-friends {
+    background-color: #8a34c3;
+    width: 325px;
+    height: 310px;
+    border-radius: 45px;
+    rotate: 12deg;
+    position: absolute;
+    top: -70px;
+    left: 140px;
+}
+
+.semi-circle-add-friends {
+    background-color: #eb4a7c;
+    width: 250px;
+    height: 210px;
+    rotate: -23deg;
+    position: absolute;
+    left: 330px;
+    bottom: -235px;
+    border-radius: 86% 12% 50% 50%/59% 44% 56% 41%;
+}
+
+.add-friends-text {
+    position: relative;
+}
+.add-friends-text h2 {
+    font-size: 28px;
+    font-family: "Palanquin Dark";
+    margin-top: 150px;
+}
+.add-friends-text p {
+    line-height: 42px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-right: 190px;
+}
+.add-friends-text img {
+    height: 430px;
+    width: 430px;
+    position: absolute;
+    bottom: -540px;
+    right: 30px;
+}
+
+.learn-more {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #9630db;
+    padding: 0 27px;
+    border-radius: 7px;
+    border: none;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.learn-more:hover {
+    background-color: #5c0a96;
+}
+
+.yellow-circle-add-friends {
+    position: absolute;
+    left: -40px;
+    bottom: -70px;
+    width: 22px;
+    height: 22px;
+    background-color: #f5ac15;
+}
+
+.purple-circle-add-friends {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #8a34c3;
+    opacity: 0.3;
+    bottom: -170px;
+    left: 50px;
+}
+
+.app-badge {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+.app-badge h2 {
+    font-size: 28px;
+    font-family: "Palanquin Dark";
+    margin: 180px 0 20px 300px;
+}
+.app-badge a {
+    margin-top: 60px;
+    margin-left: 300px;
+}
+
+.get-app {
+    position: relative;
+}
+
+.pink-circle-app-badge {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 60px;
+    bottom: -70px;
+    background-color: #faafaf;
+}
+
+.purple-circle-app-badge {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 150px;
+    bottom: -280px;
+    background-color: #8a34c3;
+    opacity: 0.5;
+}
+
+.yellow-circle-app-badge {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    right: 10px;
+    bottom: -370px;
+    background-color: #f5ac15;
+    opacity: 0.5;
+}
+
+.app-badge-phone {
+    position: relative;
+}
+
+.app-badge-phone img {
+    margin-left: 100px;
+}
+
+.yellow-circle-app-badge-phone {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    right: 45px;
+    top: -70px;
+    z-index: -1;
+    background-color: #f5ac15;
+    display: flex;
+}
+
+.white-circle-app-badge-phone {
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    margin: auto;
+    justify-content: center;
+}
+
+.purple-triangle-app-badge {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #702e9c;
+    border-top-right-radius: 30%;
+    transform: rotate(-105deg) skew(-30deg) scale(1, 0.866);
+    bottom: -390px;
+    right: -170px;
+    z-index: -1;
+}
+
+.purple-triangle-app-badge::before,
+.purple-triangle-app-badge::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-top-right-radius: inherit;
+}
+
+.purple-triangle-app-badge::before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+        translateY(-50%);
+}
+
+.purple-triangle-app-badge::after {
+    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translateX(50%);
+}
+
+.subscribe-to-newsletter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to right,
+        rgb(138, 52, 195),
+        rgba(62, 66, 163, 0.85)
+    );
+    height: 450px;
+    margin-top: 600px;
+    margin-bottom: 200px;
+}
+.subscribe-to-newsletter img {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    bottom: -170px;
+    left: 40px;
+}
+.subscribe-to-newsletter h2 {
+    font-size: 28px;
+    font-family: "Palanquin Dark";
+    color: #ffffff;
+    text-align: center;
+    margin-top: 150px;
+}
+.subscribe-to-newsletter .email {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.email input {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 35px;
+    width: 500px;
+}
+
+.email input::-moz-placeholder {
+    font-size: 18px;
+}
+
+.email input::placeholder {
+    font-size: 18px;
+}
+
+.email button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 15px;
+    border-radius: 35px;
+    border: none;
+    right: -70px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #703988;
+    color: #ffffff;
+}
+
+.purple-circle-subscribe-to-newsletter {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+    background-color: #c499e1;
+}
+
+.yellow-circle-subscribe-to-newsletter {
+    position: absolute;
+    left: 140px;
+    top: 110px;
+    width: 65px;
+    height: 65px;
+    background-color: #fcdaaa;
+}
+
+.pink-circle-subscribe-to-newsletter {
+    position: absolute;
+    left: 30px;
+    bottom: 160px;
+    width: 20px;
+    height: 20px;
+    background-color: #faafaf;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        text-decoration: none;
+        font-size: 22px;
+        font-family: "Palanquin Dark";
+    }
+    .show {
+        right: 0;
+    }
+    .fa-xmark {
+        font-size: 25px;
+    }
+    .underline-animation:hover::after {
+        visibility: hidden;
+    }
+    .sign-up:hover {
+        font-family: "Palanquin Dark";
+    }
+} /*# sourceMappingURL=styles.css.map */
