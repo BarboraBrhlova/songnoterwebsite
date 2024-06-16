@@ -28,31 +28,27 @@
                 ><span class="logo-second-part">ng Noter</span></label
             >
             <ul>
-                <li><a class="underline-animation" href="">Home</a></li>
+                <li><a class="underline-animation" href="index.html">Home</a></li>
                 <li>
-                    <a class="underline-animation" href="">Features</a>
+                    <a class="underline-animation" href="#features">Features</a>
                 </li>
                 <li><a class="underline-animation" href="">Blog</a></li>
-                <li><a class="underline-animation" href="">Get App</a></li>
+                <li><a class="underline-animation" href="#app">Get App</a></li>
                 <li><button class="sign-up">Sign Up</button></li>
             </ul>
             <label id="icon"><i class="fa-solid fa-bars"></i></label>
         </nav>
         <!-- Header-->
-        <header>
-            <div class="header-part container">
+        <section id="header">
+            <div class="header-part container-fluid">
                 <div class="row">
                     <div class="musical-notes col-lg-6">
-                        <section class="circle yellow-circle-light"></section>
-                        <section class="circle yellow-circle-sm"></section>
-                        <section class="circle purple-circle-sm"></section>
-                        <section class="circle purple-circle"></section>
                         <h1>
                             Musical Notes in <br />
                             Your Pocket.
                         </h1>
                         <p class="musical-notes-text">
-                            Get our iOS app, work on your musical ideas <br />
+                            Get our iOS app, work on your musical ideas
                             from anywhere and share them with friends!
                         </p>
                         <a href=""
@@ -62,27 +58,15 @@
                                 alt="App Store Badge"
                         /></a>
                     </div>
-                    <div class="mobile-picture-part col-lg-6">
-                        <section class="purple-figure"></section>
-                        <section class="circle yellow-circle-lg"></section>
-                        <section class="circle yellow-circle"></section>
-                        <section class="circle yellow-circle-sm"></section>
-                        <section class="circle purple-circle"></section>
-                        <img
-                            id="mobile-picture"
-                            src="./songNoterPictures/Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-25 at 21.48.12_iphonexrspacegrey_portrait.png"
-                            alt="Mobile app"
-                        />
-                    </div>
                 </div>
             </div>
-        </header>
+        </section>
         <!-- App features section-->
         <section id="features">
             <h2>Smart, Simple and Easy to Use.</h2>
             <div class="upper-icons container">
                 <div class="row">
-                    <div class="text-center col-6">
+                    <div class="text-center col-lg-6 col-md-6 col-sm-12">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <h3>Audio & Notes</h3>
                         <p class="icon-text">
@@ -90,7 +74,7 @@
                             comments!
                         </p>
                     </div>
-                    <div class="text-center col-6">
+                    <div class="text-center col-lg-6 col-md-6 col-sm-12">
                         <i class="fa-solid fa-user-group"></i>
                         <h3>Collaboration with friends</h3>
                         <p class="icon-text">
@@ -101,23 +85,14 @@
             </div>
             <div class="lower-icons container">
                 <div class="row">
-                    <div class="text-center col-6">
+                    <div class="text-center col-lg-6 col-md-6 col-sm-12">
                         <i class="fa-solid fa-gift"></i>
                         <h3>Free to Use</h3>
                         <p class="icon-text">
                             Demo version available for free!
                         </p>
                     </div>
-                    <div class="check-icon text-center col-6">
-                        <section
-                            class="circle dark-yellow-circle-features"
-                        ></section>
-                        <section
-                            class="circle light-yellow-circle-features"
-                        ></section>
-                        <section
-                            class="circle purple-circle-sm-features"
-                        ></section>
+                    <div class="check-icon text-center col-lg-6 col-md-6 col-sm-12">
                         <i class="fa-regular fa-circle-check"></i>
                         <h3>Offline & Online</h3>
                         <p class="icon-text">
@@ -127,38 +102,25 @@
                 </div>
             </div>
         </section>
-        <!-- Basic features section-->
-        <section class="add-friends container-fluid row">
-            <div class="mobile-phone-add-friends col-6">
-                <div class="add-friends-phone">
-                    <section class="rectangle-add-friends"></section>
-                    <section class="semi-circle-add-friends"></section>
-                    <img
-                        id="mobile-picture"
-                        src="./songNoterPictures/Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-25 at 21.48.12_iphonexrspacegrey_portrait.png"
-                        alt="Mobile app"
-                    />
-                </div>
+        <!-- Add friends section-->
+        <section id="add-friends">
+            <div class="add-friends container-fluid row">
+            <div class="phone-picture col-lg-6 col-md-6 col-sm-12">
+                <img id="add-friends-phone" src="./songNoterPictures/add-friends-phone.svg" alt="phone app">
             </div>
-            <div class="add-friends-text col-6">
+            <div class="add-friends-text col-lg-6 col-md-6 col-sm-12">
                 <h2>Add your friends to the list</h2>
-                <p class>
+                <p>
                     Anyone using Song Noter app can share projects with other
                     users by entering their e-mail address.
                 </p>
-                <button class="learn-more">Learn more</button>
-                <section class="yellow-circle-add-friends circle"></section>
-                <section class="purple-circle-add-friends circle"></section>
-                <img
-                    id="add-friends-img"
-                    src="./songNoterPictures/two-people-with-phones.png"
-                    alt="Add Friend"
-                />
+                <button class="learn-more">Learn More</button>
+            </div>
             </div>
         </section>
         <!-- App badge section-->
-        <section class="app-badge container row">
-            <div class="get-app col-6">
+        <section class="app-badge container-fluid row" id="app">
+            <div class="get-app col-lg-6 col-md-12">
                 <h2>Get the app now!</h2>
                 <a href=""
                     ><img
@@ -166,48 +128,18 @@
                         src="./songNoterPictures/app-store-badge.svg"
                         alt="..."
                 /></a>
-                <section class="pink-circle-app-badge circle"></section>
-                <section class="purple-circle-app-badge circle"></section>
-                <section class="yellow-circle-app-badge circle"></section>
             </div>
-            <div class="app-badge-phone col-6">
-                <img
-                    id="mobile-picture"
-                    src="./songNoterPictures/Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-25 at 21.48.12_iphonexrspacegrey_portrait.png"
-                    alt="Mobile App"
-                />
-                <section class="yellow-circle-app-badge-phone circle">
-                    <section
-                        class="white-circle-app-badge-phone circle"
-                    ></section>
-                </section>
-                <section class="purple-triangle-app-badge"></section>
+            <div class="app-badge-phone col-lg-6">
+                <img src="./songNoterPictures/get-app-phone.svg" alt="Get the App">
             </div>
         </section>
 
         <section class="subscribe-to-newsletter container-fluid">
-            <section
-                class="purple-circle-subscribe-to-newsletter circle"
-            ></section>
-            <section
-                class="yellow-circle-subscribe-to-newsletter circle"
-            ></section>
-            <section
-                class="pink-circle-subscribe-to-newsletter circle"
-            ></section>
-            <img
-                src="./songNoterPictures/woman-with-phone.png"
-                alt="Mobile App"
-            />
             <h2>Subscribe to Our Monthly Newsletter.</h2>
             <div class="email">
                 <input type="email" placeholder="Enter your E-mail Address" />
                 <button type="submit">Subscribe Now</button>
             </div>
-            <section class="white-circle-subscribe-to-newsletter circle">
-                <section
-                    class="yellow-semi-circle-subscribe-to-newsletter"
-                ></section>
             </section>
         </section>
         <!-- Footer-->
@@ -216,11 +148,11 @@
                 <div class="all-rights-reserved">
                     &copy; Song Noter 2023. All Rights Reserved.
                 </div>
-                <a href="privacy.html">Privacy</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">Terms</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
+                <a class="link" href="privacy.html">Privacy</a>
+            
+                <a class="link" href="#!">Terms</a>
+               
+                <a class="link" href="#!">FAQ</a>
             </div>
         </footer>
         <script src="script.js"></script>

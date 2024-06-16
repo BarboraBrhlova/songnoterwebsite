@@ -89,9 +89,15 @@ nav ul li a:hover {
 
 //Header
 
+#header {
+    background-image: url(../songNoterPictures/header-bg.svg);
+    @include background-image;
+}
+
 .header-part {
     margin-top: 100px;
     height: 1000px;
+    margin-left: 80px;
 }
 
 .musical-notes h1 {
@@ -102,73 +108,11 @@ nav ul li a:hover {
     @include musical-notes-text;
 }
 
-.musical-notes {
-    position: relative;
-}
-
-.mobile-picture-part {
-    position: relative;
-    height: 800px;
-}
-
-#mobile-picture {
-    @include mobile-phone;
-}
-
-// Circles Header Part
-
-.circle {
-    @include circle;
-}
-
-.yellow-circle-lg {
-    @include yellow-circle-lg;
-}
-
-.purple-figure {
-    @include purple-figure;
-}
-
-.mobile-picture-part .yellow-circle-sm {
-    @include yellow-circle-small;
-    right: 130px;
-    top: 90px;
-}
-
-.mobile-picture-part .purple-circle {
-    @include purple-circle;
-    right: 45px;
-    bottom: 200px;
-}
-
-.yellow-circle {
-    @include yellow-circle;
-}
-
-.musical-notes .purple-circle {
-    @include purple-circle;
-    bottom: 100px;
-    left: 50px;
-}
-
-.musical-notes .yellow-circle-sm {
-    @include yellow-circle-small;
-    bottom: 160px;
-    right: 50px;
-}
-
-.yellow-circle-light {
-    @include yellow-circle-light;
-}
-
-.purple-circle-sm {
-    @include purple-circle-small;
-}
-
 //Features
 
 #features {
     @include features;
+    background-image: url(../songNoterPictures/features-bg.svg);
 }
 
 #features h2 {
@@ -200,60 +144,28 @@ nav ul li a:hover {
 .check-icon {
     position: relative;
 }
-.dark-yellow-circle-features {
-    @include dark-yellow-circle-features;
-}
-
-.purple-circle-sm-features {
-    @include purple-circle-sm-features;
-}
-
-.light-yellow-circle-features {
-    @include light-yellow-circle-features;
-}
 
 // Add Friends
 
-.add-friends {
+#add-friends {
+    background-image: url(../songNoterPictures/add-friends-bg.svg);
     @include add-friends;
 }
 
-.mobile-phone-add-friends {
-    position: relative;
-
-    img {
-        margin-left: 40px;
-    }
-}
-
-.rectangle-add-friends {
-    @include rectangle-add-friends;
-}
-
-.semi-circle-add-friends {
-    @include semi-circle-add-friends;
+#add-friends-phone {
+    margin-left: 100px;
 }
 
 .add-friends-text {
-    position: relative;
     h2 {
         @include section-heading;
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     p {
         line-height: 42px;
         margin-top: 30px;
-        margin-bottom: 40px;
-        padding-right: 190px;
-    }
-
-    img {
-        height: 430px;
-        width: 430px;
-        position: absolute;
-        bottom: -540px;
-        right: 30px;
+        margin-right: 200px;
     }
 }
 
@@ -267,14 +179,6 @@ nav ul li a:hover {
     @include button-hover;
 }
 
-.yellow-circle-add-friends {
-    @include yellow-circle-add-friends;
-}
-
-.purple-circle-add-friends {
-    @include purple-circle-add-friends;
-}
-
 //App Badge
 
 .app-badge {
@@ -282,87 +186,25 @@ nav ul li a:hover {
 
     h2 {
         @include section-heading;
-        margin: 180px 0 20px 300px;
+        margin: 230px 0 20px 200px;
     }
 
     a {
         margin-top: 60px;
-        margin-left: 300px;
+        margin-left: 200px;
     }
-}
-
-.get-app {
-    position: relative;
-}
-
-.pink-circle-app-badge {
-    @include pink-circle-app-badge;
-}
-
-.purple-circle-app-badge {
-    @include purple-circle-app-badge;
-}
-
-.yellow-circle-app-badge {
-    @include yellow-circle-app-badge;
-}
-
-.app-badge-phone {
-    position: relative;
-}
-
-.app-badge-phone img {
-    margin-left: 100px;
-}
-
-.yellow-circle-app-badge-phone {
-    @include yellow-circle-app-badge-phone;
-}
-
-.white-circle-app-badge-phone {
-    @include white-circle-app-badge-phone;
-}
-
-.purple-triangle-app-badge {
-    @include purple-triangle-app-badge;
-}
-
-.purple-triangle-app-badge::before,
-.purple-triangle-app-badge::after {
-    content: "";
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    background-color: inherit;
-    border-top-right-radius: inherit;
-}
-
-.purple-triangle-app-badge::before {
-    @include purple-triangle-app-badge-before;
-}
-
-.purple-triangle-app-badge::after {
-    @include purple-triangle-app-badge-after;
 }
 
 //Subscribe to Newsletter
 
 .subscribe-to-newsletter {
+    background-image: url(../songNoterPictures/subscribe-bg.svg);
+    @include background-image;
     position: relative;
     display: flex;
     flex-direction: column;
-    background: $subscribe-section;
-    height: 450px;
-    margin-top: 600px;
-    margin-bottom: 200px;
-
-    img {
-        height: 350px;
-        width: 350px;
-        position: absolute;
-        bottom: -170px;
-        left: 40px;
-    }
+    margin-bottom: 100px;
+    padding-bottom: 300px;
 
     h2 {
         @include section-heading;
@@ -391,30 +233,101 @@ nav ul li a:hover {
     @include subscribe-button;
 }
 
-.purple-circle-subscribe-to-newsletter {
-    @include purple-circle-subscribe-to-newsletter;
-}
-
-.yellow-circle-subscribe-to-newsletter {
-    @include yellow-circle-subscribe-to-newsletter;
-}
-
-.pink-circle-subscribe-to-newsletter {
-    @include pink-circle-subscribe-to-newsletter;
-}
-
-.white-circle-subscribe-to-newsletter {
-    @include white-circle-subscribe-to-newsletter;
-}
-
 //Footer
 
 footer {
-    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-//Mobile Design
-@media (max-width: 909px) {
+.all-rights-reserved {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: $dark-text;
+    margin-right: 20px;
+}
+
+//Tablet Design
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        font-size: $general-text-size-tablet;
+    }
+
+    .logo {
+        padding: 0px;
+    }
+
+    #header {
+        background-image: url(../songNoterPictures/header-bg-tablet.svg);
+    }
+
+    .musical-notes h1 {
+        @include musical-notes-heading-tablet;
+    }
+
+    .musical-notes-text {
+        @include musical-notes-text-tablet;
+        padding-right: 500px;
+    }
+
+    .icon-text {
+        @include icon-text-tablet;
+    }
+
+    #features {
+        background-image: url(../songNoterPictures/features-bg-tablet.svg);
+    }
+
+    #add-friends-phone {
+        display: none;
+    }
+
+    .add-friends-text p {
+        margin-right: 50px;
+        margin-top: 0px;
+    }
+
+    .add-friends-text h2 {
+        margin-top: 30px;
+        padding-top: 100px;
+    }
+
+    #add-friends {
+        background-image: url(../songNoterPictures/add-friends-bg-tablet.svg);
+    }
+
+    .learn-more {
+        margin-bottom: 200px;
+    }
+
+    .app-badge-phone {
+        display: none;
+    }
+
+    .app-badge {
+        @include app-badge-tablet;
+        padding-bottom: 400px;
+        margin-top: 100px;
+    }
+
+    .app-badge h2 {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .app-badge a {
+        margin-left: 100px;
+    }
+
+    .subscribe-to-newsletter {
+        background-image: url(../songNoterPictures/subscribe-bg-tablet.svg);
+    }
+}
+
+//Mobile Design 576px
+@media (max-width: 768px) {
     nav #icon {
         display: block;
     }
@@ -460,5 +373,137 @@ footer {
 
     .sign-up:hover {
         font-family: $bold-font;
+    }
+
+    #header {
+        background-image: url(../songNoterPictures/header-bg-phone.svg);
+    }
+
+    .musical-notes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .musical-notes h1 {
+        font-size: $main-heading-size-phone;
+        text-align: center;
+    }
+
+    .musical-notes-text {
+        font-size: $header-text;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .header-part {
+        margin-left: 0px;
+        height: 1200px;
+    }
+
+    .app-badge-header {
+        width: 250px;
+    }
+
+    #features {
+        background-image: url(../songNoterPictures/features-bg-phone.svg);
+    }
+
+    #features h2 {
+        font-size: $section-heading-size-phone;
+        margin-top: 100px;
+    }
+
+    #features h3 {
+        font-size: $icon-heading-phone;
+    }
+
+    .icon-text {
+        font-size: $icon-text-phone;
+        margin-bottom: 70px;
+    }
+
+    #add-friends {
+        background-image: url(../songNoterPictures/add-friends-bg-phone.svg);
+    }
+    .add-friends-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add-friends-text h2 {
+        font-size: $section-heading-size-phone;
+        margin-top: 600px;
+    }
+
+    .add-friends-text p {
+        text-align: center;
+        margin-right: 0px;
+        padding: 10px 100px;
+    }
+
+    #add-friends-phone {
+        display: none;
+    }
+
+    .learn-more {
+        margin-top: 15px;
+        padding: 5px 60px;
+        font-size: $button-text-size-phone;
+    }
+
+    .app-badge-phone {
+        display: none;
+    }
+
+    .app-badge {
+        background-image: url(../songNoterPictures/get-app-bg-phone.svg);
+    }
+
+    .get-app h2 {
+        margin-top: 250px;
+        font-size: $section-heading-size-phone;
+    }
+
+    .get-app {
+        padding-bottom: 1000px;
+        margin-left: 0px;
+    }
+
+    .app-badge-img {
+        width: 250px;
+    }
+
+    .subscribe-to-newsletter {
+        background-image: url(../songNoterPictures/subscribe-bg-phone.svg);
+    }
+
+    .subscribe-to-newsletter h2 {
+        font-size: $section-heading-size-phone;
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email input {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-to-newsletter button {
+        position: relative;
+        margin-top: 40px;
+        padding: 12px 50px;
+        right: -110px;
+        font-size: $button-text-size-phone;
     }
 }

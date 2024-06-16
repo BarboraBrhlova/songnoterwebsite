@@ -31,15 +31,27 @@ $icons-background: #ede0f6;
 $semi-circle-add-friends: #eb4a7c;
 $subscribe-button: #703988;
 
-// FONTS
+// FONTS DESKTOP
 $general-text: "Palanquin";
 $bold-font: "Palanquin Dark";
 $general-text-size: 20px;
-$main-heading-size: 68px;
-$section-heading-size: 28px;
+$main-heading-size: 64px;
+$section-heading-size: 24px;
 $icon-heading: 24px;
 $icon-text: 18px;
 $button-text-size: 18px;
 $song-noter-logo-size: 18px;
 $navbar-text-size: 18px;
 $email-placeholder-size: 18px;
+
+//FONTS TABLET
+
+$main-heading-size-tablet: 56px;
+$section-heading-size-tablet: 22px;
+$general-text-size-tablet: 18px;
+$section-heading-size-phone: 28px;
+$icon-heading-phone: 28px;
+$icon-text-phone: 20px;
+$button-text-size-phone: 20px;
+$main-heading-size-phone: 42px;
+$header-text: 22px;
